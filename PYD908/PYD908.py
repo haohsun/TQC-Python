@@ -1,14 +1,12 @@
-#f_name = input()
-n = 3
+f_name = input()
+n = int(input())
 
-with open("/Users/lihaohsun/Desktop/桌面 2/GitHub/TQC-Python/PYD908/read.txt"
-            ,"r",encoding = "utf-8") as file:
+with open(f_name,"r",encoding = "utf-8") as file:
         all_word = file.read().split()
 
 words = []
 
-file = open("/Users/lihaohsun/Desktop/桌面 2/GitHub/TQC-Python/PYD908/read.txt"
-            ,"r",encoding = "utf-8")
+file = open(f_name,"r",encoding = "utf-8")
 
 for line in file:
     line_sp = line.split()
@@ -21,3 +19,5 @@ words.sort()
 
 for i in words:
     print(i)
+    
+file.close()
