@@ -1,10 +1,10 @@
 f_name = input()
 n = int(input())
+words = []
+
 
 with open(f_name,"r",encoding = "utf-8") as file:
         all_word = file.read().split()
-
-words = []
 
 file = open(f_name,"r",encoding = "utf-8")
 
